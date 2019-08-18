@@ -10,6 +10,8 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
+
+
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -133,3 +135,15 @@ export function unregister() {
     });
   }
 }
+
+// self.addEventListener('install',event => {
+//   event.waitUntil(
+//     caches.open('precache-v1')
+//       .then(cache => cache.addAll([
+//         'static/index.html',
+//         'static/main.css',
+//         'static/bundle.js'
+//       ]))
+//       .then(self.skipWaiting())
+//   )
+// })
